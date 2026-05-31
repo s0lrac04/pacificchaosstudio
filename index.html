@@ -108,12 +108,13 @@ h2 em{font-style:normal;color:var(--acc);display:block}
 .pack-note{font-family:'DM Mono',monospace;font-size:10px;color:var(--mut2);margin-top:14px;text-align:center;line-height:1.5}
 
 /* ADDON */
-.addon{margin-top:24px;background:var(--bg2);border:1px dashed var(--bor);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.addon{margin-top:32px;background:linear-gradient(135deg,rgba(184,255,60,.07),rgba(184,255,60,.02));border:1px solid var(--acc);padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden}
+.addon::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc)}
 .addon-l .mono{font-size:11px;color:var(--acc);text-transform:uppercase;letter-spacing:.1em}
-.addon-l h3{font-size:22px;font-weight:800;margin:6px 0 6px}
+.addon-l h3{font-family:'Archivo',sans-serif;font-size:24px;font-weight:900;margin:8px 0 8px;letter-spacing:-.02em}
 .addon-l p{font-size:14px;color:var(--mut);max-width:520px;line-height:1.55}
 .addon-r{text-align:right}
-.addon-r .p{font-size:32px;font-weight:900}
+.addon-r .p{font-family:'Archivo',sans-serif;font-size:38px;font-weight:900;color:var(--acc);letter-spacing:-.02em}
 .addon-r .s{font-family:'DM Mono',monospace;font-size:11px;color:var(--mut)}
 
 /* HOW */
@@ -408,9 +409,12 @@ footer{border-top:1px solid var(--bor);padding:60px 0 40px;margin-top:60px}
         <h3>Landing Page que converte</h3>
         <p>Os anúncios convertem muito melhor com uma página dedicada. Design premium à tua marca, pronta a receber tráfego desde o primeiro dia. Entrega em 7 dias úteis.</p>
       </div>
-      <div class="addon-r">
-        <div class="p">600€</div>
-        <div class="s mono">valor único</div>
+      <div class="addon-r" style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+        <div>
+          <div class="p">600€</div>
+          <div class="s mono">valor único</div>
+        </div>
+        <a href="#contacto" class="btn btn-p" style="font-size:11px;padding:10px 20px">Quero este →</a>
       </div>
     </div>
   </div>
